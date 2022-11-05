@@ -15,9 +15,10 @@
 
 body {
     font-family: $fonts; /* variable usage */
-    background-color: $primary-color;
-    padding: $spacing;
+    font-size: 16px;
     min-height: 100vh;
-    @include flex-center(); /* using the mixins function */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
