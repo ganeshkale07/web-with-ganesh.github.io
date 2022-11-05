@@ -1,0 +1,19 @@
+// How to use mixing functions in other files
+//      @include border-radius(0.5rem); /* using the mixins function */
+//      @include flex-center(); 
+// 
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* $radius is the parameter of the function */
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+

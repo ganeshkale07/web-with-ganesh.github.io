@@ -1,0 +1,23 @@
+/* file import */
+
+@import 'variables';
+@import 'mixins';
+
+/* Hoe to use "&" 
+.card {
+    margin: 2rem;
+    &_dark {
+        background-color: black;
+    }
+}
+&.class2 or & class2
+*/
+
+body {
+    font-family: $fonts; /* variable usage */
+    background-color: $primary-color;
+    padding: $spacing;
+    min-height: 100vh;
+    @include flex-center(); /* using the mixins function */
+}
+
