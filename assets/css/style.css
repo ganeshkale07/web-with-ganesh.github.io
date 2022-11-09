@@ -16,4 +16,60 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+}
+
+header {
+  background-color: #008374;
+}
+header .red {
+  color: #f85a40;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+header .nav-list li {
+  padding: 0 20px;
+  align-self: center;
+}
+
+section {
+  padding: 0 30px;
+}
+
+section.hero {
+  background-color: #008374;
+  display: flex;
+  justify-content: space-between;
+}
+section.hero .hero-lft-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.hero h6 {
+  max-width: 30rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+section.hero .hero-btn button {
+  padding: 14px 40px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+section.hero .hero-btn button.btn-start {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }/*# sourceMappingURL=style.css.map */

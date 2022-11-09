@@ -20,5 +20,61 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
+header{
+    background-color: $primary-color;
+    .red{
+        color: $secondary-color;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-list{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        li{
+            padding: 0 20px;
+            align-self: center;
+        }
+
+    }
+}
+section{
+    padding: 0 30px;
+}
+section.hero{
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    & .hero-lft-panel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h6{
+        max-width: 30rem;
+        font-weight: $font-weight-4;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 30px;
+        font-size: 1rem;
+    }
+    .hero-btn button{
+        padding: 14px 40px;
+        border-radius: 50px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: $font-weight-6;
+
+        &.btn-start{
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+
 
