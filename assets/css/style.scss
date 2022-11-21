@@ -3,7 +3,7 @@
 @import 'variables';
 @import 'mixins';
 
-/* Hoe to use "&" 
+/* How to use "&" 
 .card {
     margin: 2rem;
     &_dark {
@@ -21,6 +21,14 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: white;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
 }
 header{
     background-color: $primary-color;
@@ -71,10 +79,57 @@ section.hero{
         font-weight: $font-weight-6;
 
         &.btn-start{
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.1);
+            background-color: $light-green-color;
+            border: 2px solid $light-green-color;
         }
     }
 }
+section.hero-card{
+    background-color: $primary-color;
+    height: 10rem;
+    position: relative;
+    .card-container{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: absolute;
 
+    }
+    .card{
+        background-color: $light-green-color;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: $font-weight-6;
+        width: 20%;
+        margin: 10px 0;
+
+    }
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+}
+section.services{
+    background-color: #FAFAFA;
+    color: black;
+}
+// media queries
+// min-width small to big screen
+// max-width big to small screen
+section > div , header > nav{
+    margin: 0 auto;
+    @media screen and (min-width : 576px) {
+        width: 540px;
+    }
+    @media screen and (min-width : 1400px) {
+        width: 1200px;
+    }
+    @media screen and (min-width : 1400px) {
+        width: 1320px;
+    }
+
+    
+}
 

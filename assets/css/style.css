@@ -1,6 +1,6 @@
 /* file import */ /* Creating and Using Variables */
 /* $radius is the parameter of the function */
-/* Hoe to use "&" 
+/* How to use "&" 
 .card {
     margin: 2rem;
     &_dark {
@@ -17,6 +17,16 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: white;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -72,4 +82,53 @@ section.hero .hero-btn button {
 section.hero .hero-btn button.btn-start {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+section.hero-card {
+  background-color: #008374;
+  height: 10rem;
+  position: relative;
+}
+section.hero-card .card-container {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;
+}
+section.hero-card .card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 20%;
+  margin: 10px 0;
+}
+section.hero-card::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section.services {
+  background-color: #FAFAFA;
+  color: black;
+}
+
+section > div, header > nav {
+  margin: 0 auto;
+}
+@media screen and (min-width: 576px) {
+  section > div, header > nav {
+    width: 540px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  section > div, header > nav {
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  section > div, header > nav {
+    width: 1320px;
+  }
 }/*# sourceMappingURL=style.css.map */
