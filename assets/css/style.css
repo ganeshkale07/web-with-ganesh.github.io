@@ -109,26 +109,26 @@ section.hero-card::after {
   clear: both;
 }
 
-section.services {
+section.services, section.about, section.portfolio, section.contact {
   background-color: #FAFAFA;
   color: black;
 }
 
-section > div, header > nav {
+.container {
   margin: 0 auto;
 }
 @media screen and (min-width: 576px) {
-  section > div, header > nav {
+  .container {
     width: 540px;
   }
 }
 @media screen and (min-width: 1400px) {
-  section > div, header > nav {
+  .container {
     width: 1200px;
   }
 }
 @media screen and (min-width: 1400px) {
-  section > div, header > nav {
+  .container {
     width: 1320px;
   }
 }/*# sourceMappingURL=style.css.map */

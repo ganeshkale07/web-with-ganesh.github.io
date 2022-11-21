@@ -111,14 +111,16 @@ section.hero-card{
     }
     
 }
-section.services{
-    background-color: #FAFAFA;
-    color: black;
+section{
+    &.services, &.about, &.portfolio, &.contact {
+        background-color: #FAFAFA;
+        color: black
+    }
 }
 // media queries
 // min-width small to big screen
 // max-width big to small screen
-section > div , header > nav{
+.container{
     margin: 0 auto;
     @media screen and (min-width : 576px) {
         width: 540px;
